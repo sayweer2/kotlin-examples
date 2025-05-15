@@ -34,7 +34,8 @@ fun main()
     println("lutfen dogum yilinizi duslayiniz = ")
     val alinanDeger = okuyucu.nextLine().toIntOrNull()
 
-    val dogumYili = alinanDeger?.let { println("naber gençlik") }?:println("burası null bir deger")
+    val dogumYili = alinanDeger?.let { println("basarili dogum yili") }?:println("burası null bir deger")
 
-
+    var sonuc = if(yas >= 65) "yasli" else "genc"  // if-else yapisinin pratik ve basit bit yoludur.
+    println("durumunuz = $sonuc")
 }

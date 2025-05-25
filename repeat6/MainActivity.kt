@@ -1,4 +1,4 @@
-package com.calisma.repeat5
+package com.example.repeat6
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

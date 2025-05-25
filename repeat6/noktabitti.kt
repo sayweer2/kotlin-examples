@@ -1,4 +1,4 @@
-package com.example.repeat6
+    package com.example.repeat6
 
 fun main()
 {
@@ -27,9 +27,11 @@ fun main()
 
     val ben: ConstructorCalisma = ConstructorCalisma(302 ,"seyit" ,"degirmen") //primary constructor kullanilirak olusturuldu.
     val digerBen: ConstructorCalisma = ConstructorCalisma(5004 ,"sel" ,"ykn" ,123123.0 ,0.0)//secondary constructor kullanilirak olusuturuldu.primary da kullanıldı mecburen 😂
+    val digerYarimlaOrtakParcamiz = ConstructorCalisma(1 ,"afra" ,"degirmen" ,0 ,"babasinin kizi")
 
     println(digerBen.isim)
     println(ben.isim) // gibi gibi kullanilabilir.
+    println(digerYarimlaOrtakParcamiz.soyad)
 
     uzayliKardes2.kos("sayweer")
     uzayliKardes.kos("sayweer2")

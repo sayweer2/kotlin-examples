@@ -13,10 +13,18 @@ fun main()
         //burada println() icerisinde kullanırsak eger o zaman once void olarak calisir ve yapmasi gerekenleri yapar daha sorna ise nesne yani kotlin.Unit ekrana bastirilir.
     }
 
-    val uzayliKardes: Uzayli = Uzayli()
-    val uzayliKardes2: Uzayli = Marsli()
+    infix fun Uzayli.kac(isim2: String) //burada ise bir diger infix fonksiyon olusturma yolu olan extension fonksiyondan olusturmayi gorduk.
+    {
+        println("${this.uzayliIsim} $isim2 ye kaciyor.")
+    }
+
+    val uzayliKardes: Uzayli = Uzayli("sayweer2")
+    val uzayliKardes2: Uzayli = Marsli("sayweer")   //extension fonksiyonloar statik dispatch (derleme zamanında, referans türüne göre çalışır). override edilmiş gerçek fonksiyonlar dinamik dispatch (çalışma zamanında, gerçek nesne türüne göre çalışır)
 
 
-    uzayliKardes2.kos("sayweer")//her ne kadar farklı turden nesneler olsalar da extension fonksiyonda bizim icin onemli olan referansının hangi sinif turunden oldugudur.
-    uzayliKardes.kos("sayweer")
+    uzayliKardes2.kos("sayweer")
+    uzayliKardes.kos("sayweer2")
+
+    uzayliKardes kac "sel"
+    uzayliKardes2 kac "sln"
 }

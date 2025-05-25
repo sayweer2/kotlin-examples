@@ -16,7 +16,13 @@ fun main()
     val uzayliKardes: Uzayli = Uzayli()
     val uzayliKardes2: Uzayli = Marsli()
 
-
     uzayliKardes2.kos("sayweer")//her ne kadar farklı turden nesneler olsalar da extension fonksiyonda bizim icin onemli olan referansının hangi sinif turunden oldugudur.
     uzayliKardes.kos("sayweer")
+
+    val ben: ConstructorCalisma = ConstructorCalisma(302 ,"seyit" ,"degirmen") //primary constructor kullanilirak olusturuldu.
+    val digerBen: ConstructorCalisma = ConstructorCalisma(5004 ,"sel" ,"ykn" ,123123.0 ,0.0)//secondary constructor kullanilirak olusuturuldu.primary da kullanıldı mecburen 😂
+
+    println(digerBen.isim)
+    println(ben.isim) // gibi gibi kullanilabilir.
+
 }
